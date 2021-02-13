@@ -1,0 +1,68 @@
+.animal__container {
+    color: #5f5d58;
+    height: 100vh;
+}
+
+/* Cover */
+.animal__cover__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.animal__cover__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.animal__cover__closebtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+/* Cover end */
+
+/* Header */
+.animal__header__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animal__header__name {
+    margin: 0;
+    font-weight: 700;
+}
+.animal__header__location {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fe9e0c;
+}
+/* Header end */
+
+/* Body */
+.animal__body__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.animal__body__text {
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    font-size: 1.2em;
+}
+/* Body end */
+
+/* Actions */
+.animal__actions__container {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Actions end */
