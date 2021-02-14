@@ -8,7 +8,7 @@ import Body from "../components/Animales/Body";
 import Actions from "../components/Animales/Actions";
 import Button from "../components/common/Button";
 
-import coins_icon from '../assets/coins_icon.svg'
+import calendar_icon from '../assets/calendar_icon.svg'
 import share_icon from '../assets/share_icon.svg'
 import DateEvent from "../components/Event/DateEvent";
 
@@ -20,12 +20,12 @@ const Animales = () => {
                 alt="Dog"
                 footer={<div className="event__dateevent__custom__container"><DateEvent month="abr" day={15} /></div>} />
             <div className="animal__container__body">
-                <Header name="Bob" location="Perú" onClose={() => { }} />
+                <Header name="Evento de Animales" location="Perú, Abrigo Animal" onClose={() => { }} />
                 <Body >
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nobis nisi quia porro! Officiis explicabo possimus praesentium nemo, nulla consequuntur dignissimos consequatur atque minus ipsa quod voluptatem? Neque, enim nemo.
             </Body>
                 <Actions>
-                    <Button icon={coins_icon}>Adoptar a Bob</Button>
+                    <Button icon={calendar_icon}>Comprar Ticket</Button>
                     <Button icon={share_icon} variant="secondary" >Compartir</Button>
                 </Actions>
 
