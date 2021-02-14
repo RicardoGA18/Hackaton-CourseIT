@@ -36,3 +36,36 @@
         transform: rotate(360deg);
     }
 }
+
+.custom__button {
+    height: 60px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border: none;
+    box-shadow: 0px 5px 8px #bebebe;
+    border-radius: 15px;
+    padding: 10px 45px 10px 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.custom__button:hover {
+    cursor: pointer;
+}
+
+.custom__button__primary {
+    background: #ffc225;
+}
+
+.custom__button__secondary {
+    background-color: #fe9e0c;
+}
+
+.custom__button__icon {
+    padding-right: 18px;
+}
