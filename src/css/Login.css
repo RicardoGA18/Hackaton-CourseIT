@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
-*, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  font-size: initial;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
 input:focus{
   outline:none !important;
@@ -13,11 +6,6 @@ input:focus{
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-}
-
-#app {
-  width: 100%;
-  height: auto;
 }
 
 /* Layout */
@@ -30,8 +18,10 @@ input:focus{
 /* Login */
 .Login {
   display: -ms-grid;
-  display: grid;
-  grid-gap: 130px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Login__Form {
@@ -82,6 +72,10 @@ input:focus{
   font-weight: 800;
 }
 
+.FormFooter{
+  margin-top: 30px;
+}
+
 .FormFooter__Question, .FormFooter__Link {
   text-align: center;
   font-weight: 600;
@@ -94,5 +88,11 @@ input:focus{
 
 .FormFooter__Question {
   color: #72706C;
+}
+
+@media screen and (min-width: 600px){
+  .Login{
+    height: 750px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
