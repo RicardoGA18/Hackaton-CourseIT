@@ -16,10 +16,17 @@
     display: block;
 }
 .animal__cover__closebtn {
+    background: none;
+    border: none;
     position: absolute;
     top: 5px;
     right: 5px;
 }
+
+.animal__cover__closebtn:hover {
+    cursor: pointer;
+}
+
 /* Cover end */
 
 /* Header */
