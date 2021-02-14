@@ -1,0 +1,39 @@
+.event__dateevent__custom__container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -15px;
+}
+.animal__container__body {
+    padding-top: 35px;
+}
+
+.event__dateevent__container {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0px 5px 8px #b5b5b5;
+    text-align: center;
+}
+
+.event__dateevent__container p {
+    line-height: 0.9;
+    margin: 0;
+    /* font-weight: bold; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.event__dateevent__month {
+    color: #ffc225;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.event__dateevent__day {
+    font-weight: 500;
+    font-size: 1.8em;
+}
