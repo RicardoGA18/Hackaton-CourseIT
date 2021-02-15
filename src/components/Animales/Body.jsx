@@ -4,12 +4,9 @@ const Body = ({ children }) => {
 
     return <Fragment>
         <div className="animal__body__container">
-            <div
-                className="animal__body__text">
-                <p>
-                    {children}
-                </p>
-            </div>
+            <p>
+                {children}
+            </p>
         </div>
     </Fragment>
 

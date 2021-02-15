@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const Button = ({ children, icon, variant, onClick }) => {
 
     const v = variant ?? "primary"

@@ -5,24 +5,27 @@ import arrow_left_icon from "../assets/arrow_left_icon.svg";
 import CharitieCard from "../components/Charities/CharitieCard";
 import { useHistory } from "react-router-dom";
 
+import charity from '../assets/photos/charity.png'
+
 const Charities = () => {
     const history = useHistory();
     return (
         <Fragment>
             <div className="charities__container">
                 <Header icon={arrow_left_icon} title="Donaciones" />
-                {[...new Array(10)].map((_, idx) => (
-                    <div key={idx} style={{ marginBottom: 20 }}>
+                <div className="charitiercard__grid">
+                    {[...new Array(3)].map((_, idx) => (
                         <CharitieCard
+                            key={idx}
                             onClick={() => {
                                 history.push(`/charities/${idx}`);
                             }}
-                            img="https://www.californiaemploymentlawreport.com/wp-content/uploads/sites/747/2018/12/volunteers.jpg"
+                            img={ charity }
                             title="Abrigo Animal de Perú"
                             details="Refugio de perros y gatos"
                         />
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </Fragment>
     );

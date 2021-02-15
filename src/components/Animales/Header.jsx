@@ -8,7 +8,7 @@ const Header = ({ name, location }) => {
             <h1 className="animal__header__name">{name}</h1>
 
             <div className="animal__header__location">
-                <img src={LocationIcon} alt="icon-location" style={{ width: 25, height: 25 }} />
+                <img src={LocationIcon} alt="icon-location" style={{ width: 13, height: 18 }} />
                 <p>
                     {location}
                 </p>

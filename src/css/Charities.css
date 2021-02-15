@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
 .charities__container {
     background-color: #fa7c20;
-    height: 100%;
+    min-height: 100%;
     /* border-radius: 30px; */
-    padding: 20px 15px 5px 15px;
+    padding: 20px 20px 30px;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* charitier__cad */
@@ -10,7 +13,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-shadow: 3px 4px 10px rgb(90, 90, 90);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 70px;
 }
 
@@ -21,8 +24,13 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    height: 40px;
-    padding-right: 20px;
+    margin-right: 15px;
+    width: 14px;
+    height: 24px;
+}
+.charitier__header__icon__container img{
+    width: 100%;
+    height: 100%;
 }
 .charitier__header__icon__container:hover {
     cursor: pointer;
@@ -31,66 +39,67 @@
 .charitier__header__text__container {
     display: flex;
     align-items: center;
-    padding-bottom: 4px;
 }
 .charitier__header__container img {
-    -webkit-filter: drop-shadow(3px 4px 6px rgb(90, 90, 90));
-    filter: drop-shadow(3px 4px 6px rgb(90, 90, 90));
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .charitier__header__container h2 {
-    font-weight: 700;
+    font-weight: 800;
     color: white;
-    font-size: 1.8em;
+    font-size: 35px;
     margin: 0;
 }
 
 /* charitier__header end */
 
 /* charitier__card */
+.charitiercard__grid{
+    width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 17px;
+    grid-row-gap: 19px;
+    -ms-grid-rows: (1fr)[auto-fill];
+    grid-template-rows: repeat(auto-fill, 1fr);
+}
+
 .charitiercard__container {
     width: 100%;
-    display: block;
     position: relative;
     height: auto;
-    min-height: 220px;
-    box-sizing: border-box;
-
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0px 4px 10px rgb(70, 70, 70);
-}
-
-.charitiercard__container:hover {
+    grid-column: 1/3;
     cursor: pointer;
+    min-height: auto;
 }
-
-.charitiercard__container__cover {
-    left: 0;
-    height: 100%;
+.charitiercard__container img{
     width: 100%;
-    top: 0;
-}
-.charitiercard__container__cover img {
-    height: auto;
-    width: 100%;
-    display: block;
-    position: relative;
 }
 
 .charitiercard__container__body {
-    padding: 10px;
     position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 700;
+    top: 10px;
+    left: 13px;
 }
 .charitiercard__container__body h2 {
-    font-size: 1.7em;
+    font-weight: 800;
+    font-size: 24px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49918);
 }
 
-.charitiercard__container__body * {
-    margin: 0;
-    padding: 0;
+.charitiercard__container__body p {
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49918);
 }
 /* charitier__card end */
+
+@media screen and (min-width: 600px){
+    .charities__container{
+        border-radius: 30px;
+    }
+}

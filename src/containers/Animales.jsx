@@ -9,6 +9,7 @@ import Button from "../components/common/Button";
 
 import coins_icon from "../assets/coins_icon.svg";
 import share_icon from "../assets/share_icon.svg";
+import bobAnimal from '../assets/photos/bobAnimal.png'
 
 const Animales = () => {
     // let { id } = useParams();
@@ -16,16 +17,14 @@ const Animales = () => {
         <Fragment>
             <div className="animal__container">
                 <Cover
-                    src="https://www.cesarsway.com/wp-content/uploads/2019/10/AdobeStock_190562703.jpeg"
+                    src={bobAnimal}
                     alt="Dog"
                 />
                 <Header name="Bob" location="Perú" onClose={() => {}} />
 
                 <Body>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi nobis nisi quia porro! Officiis explicabo possimus
-                    praesentium nemo, nulla consequuntur dignissimos consequatur
-                    atque minus ipsa quod voluptatem? Neque, enim nemo.
+                    ¡Bob es lindo, súper cariñoso y le encanta jugar! Pero no todo es divertido,
+                    ¿verdad? Necesita ser castrado y para eso necesitamos recolectar 1,000 monedas.
                 </Body>
                 <Actions>
                     <Button icon={coins_icon}>Adoptar a Bob</Button>

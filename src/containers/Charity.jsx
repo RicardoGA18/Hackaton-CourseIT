@@ -9,6 +9,7 @@ import Button from "../components/common/Button";
 
 import link_icon from "../assets/link_icon.svg";
 import share_icon from "../assets/share_icon.svg";
+import foundation from '../assets/photos/foundation.png'
 
 const Charity = () => {
     // let { id } = useParams();
@@ -17,7 +18,7 @@ const Charity = () => {
         <Fragment>
             <div className="animal__container">
                 <Cover
-                    src="https://www.californiaemploymentlawreport.com/wp-content/uploads/sites/747/2018/12/volunteers.jpg"
+                    src={foundation}
                     alt="Dog"
                     onClose={() => {
                         history.goBack();

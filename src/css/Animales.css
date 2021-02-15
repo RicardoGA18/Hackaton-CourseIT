@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
 .animal__container {
     color: #5f5d58;
-    height: 100vh;
+    min-height: 100%;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 30px;
 }
 
 .animal__container__body {
@@ -25,8 +29,8 @@
     background: none;
     border: none;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 19px;
+    right: 17px;
 }
 
 .animal__cover__closebtn:hover {
@@ -46,7 +50,9 @@
 
 .animal__header__name {
     margin: 0;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
 }
 .animal__header__location {
     flex-direction: row;
@@ -57,24 +63,26 @@
     color: #fe9e0c;
 }
 .animal__header__location p {
-    margin: 0;
-    font-size: 1.5em;
+    margin-left: 6px;
+    font-size: 19px;
+    font-weight: normal;
 }
 /* Header end */
 
 /* Body */
 .animal__body__container {
-    display: flex;
-    justify-content: center;
+    display: block;
+    padding: 0 28px;
     width: 100%;
+    margin: 10px 0 40px;
+}
+.animal__body__container p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(126,126,126)
 }
 
-.animal__body__text {
-    text-align: center;
-    width: 90%;
-    max-width: 300px;
-    font-size: 1.2em;
-}
 /* Body end */
 
 /* Actions */
@@ -87,3 +95,10 @@
 }
 
 /* Actions end */
+
+@media screen and (min-width: 600px){
+    .animal__cover__image{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+}
