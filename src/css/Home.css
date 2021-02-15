@@ -70,6 +70,7 @@
 .AnimalCard {
   position: relative;
   width: 100%;
+  cursor: pointer;
 }
 
 .AnimalCard img {
@@ -87,6 +88,7 @@
 }
 
 .EventCard {
+  cursor: pointer;
   width: 100%;
   position: relative;
   -ms-grid-column: 1;
@@ -156,6 +158,7 @@
 }
 
 .CardDonacion, .CardAyuda {
+  cursor: pointer;
   border-radius: 15px;
   width: 100%;
   height: 165px;

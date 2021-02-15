@@ -1,8 +1,11 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 const EventCard = ({img,title,organize,month,day}) => {
+  const history = useHistory()
+
   return (
-    <div className="EventCard">
+    <div className="EventCard" onClick={()=>{history.push('/evento/1')}}>
       <img src={img} />
       <div className="EventCard__Info">
         <p className="EventCard__Title">{title}</p>

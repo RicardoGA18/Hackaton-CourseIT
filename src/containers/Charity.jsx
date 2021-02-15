@@ -21,7 +21,7 @@ const Charity = () => {
                     src={foundation}
                     alt="Dog"
                     onClose={() => {
-                        history.goBack();
+                        history.push('/charities');
                     }}
                 />
                 <Header name="Abrigo Animal de Perú" location="Perú" />

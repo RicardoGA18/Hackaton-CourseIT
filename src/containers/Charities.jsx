@@ -12,7 +12,7 @@ const Charities = () => {
     return (
         <Fragment>
             <div className="charities__container">
-                <Header icon={arrow_left_icon} title="Donaciones" />
+                <Header icon={arrow_left_icon} title="Donaciones" onBack={()=>{history.push('/')}}/>
                 <div className="charitiercard__grid">
                     {[...new Array(3)].map((_, idx) => (
                         <CharitieCard

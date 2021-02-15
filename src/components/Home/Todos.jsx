@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 import AnimalCard from '../common/AnimalCard'
 import EventCard from '../common/EventCard'
 
@@ -9,6 +10,8 @@ import dogfoodbowl from '../../assets/dog-food-bowl.svg'
 import shape from '../../assets/Shape.svg'
 
 const Todos = () => {
+  const history = useHistory()
+
   return (
     <div className="Todos">
       <AnimalCard
@@ -26,7 +29,7 @@ const Todos = () => {
         month="ABR"
         day="15"
       ></EventCard>
-      <div className="CardDonacion">
+      <div className="CardDonacion" onClick={()=>{history.push('/charities')}}>
         <img src={dogfoodbowl}/>
         <p>Donación al<br />Refugio de<br />Animales</p>
       </div>
