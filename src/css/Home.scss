@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.Home{
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding: 120px 25px 100px;
+  display: grid;
+  grid-template-rows: 1fr;
+  font-family: 'Nunito', sans-serif;
+}
+.HomeHead{
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105px;
+  padding: 25px 25px 8px;
+  display: grid;
+  grid-gap: 5px;
+  h1{
+    color: rgb(247,191,41);
+    font-size: 35px;
+    font-weight: 800;
+  }
+  &__Switch{
+    display: flex;
+    li{
+      list-style: none;
+      font-size: 16px;
+      color: rgba(247,191,41,0.75);
+      font-weight: 800;
+      margin-right: 12px;
+      padding-bottom: 3px;
+      cursor: pointer;
+    }
+    li.is-active{
+      color: rgb(247,191,41);
+      font-weight: 900;
+      border-bottom: 2px solid #F7BF29;
+    }
+  }
+}
+.Todos{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 17px;
+  grid-row-gap: 19px;
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+.AnimalCard{
+  position: relative;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+  p{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-weight: 800px;
+    color: rgba(255,255,255,0.9);
+    font-size: 24px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.502458);
+  }
+}
+
+.EventCard{
+  width: 100%;
+  position: relative;
+  grid-column: 1/3;
+  height: auto;
+  img{
+    width: 100%;
+  }
+  &__Info{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+  }
+  &__Title{
+    font-weight: 800;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49918);
+  }
+  &__Organize{
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  &__Date{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 54px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    .month{
+      font-size: 18px;
+      color: #F7BF29;
+      font-family: 'Anton', sans-serif;
+    }
+    .day{
+      font-size: 30px;
+      font-family: 'Anton', sans-serif;
+      color: #534E47;
+      margin-top: -12px;
+    }
+  }
+}
+.CardDonacion, .CardAyuda{
+  border-radius: 15px;
+  width: 100%;
+  height: 165px;
+  padding: 18px 15px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.168734);
+  p{
+    font-weight: 400;
+    font-size: 21px;
+    color: rgba(255,255,255,0.9)
+  }
+}
+.CardAyuda{
+  background-color: rgba(2, 215, 112, 0.9);
+}
+.CardDonacion{
+  background-color: rgba(254, 114, 12, 0.9);
+}
+
+.FooterHome{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #EAEAEA;
+  padding: 12px 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  &__Item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    p{
+      font-size: 10px;
+      color: rgb(247,191,41);
+      margin-top: 5px;
+    }
+  }
+  &__Item:nth-child(2){
+    justify-content: flex-end;
+  }
+}
+
+.Animales, .Eventos{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 17px;
+  grid-row-gap: 19px;
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+@media screen and (min-width: 600px){
+  .FooterHome{
+    position: absolute;
+    background: none;
+  }
+  .HomeHead{
+    position: absolute;
+    background: none;
+  }
+}
