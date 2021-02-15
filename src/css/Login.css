@@ -18,7 +18,7 @@ input:focus{
 /* Login */
 .Login {
   display: -ms-grid;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,8 +65,8 @@ input:focus{
 .FormLogin input[type="submit"] {
   background-color: #FFC225;
   border: none;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   color: white;
   margin-top: 10px;
   font-weight: 800;

@@ -23,12 +23,11 @@ const Animales = () => {
                 <Header name="Evento de Animales" location="Perú, Abrigo Animal" onClose={() => { }} />
                 <Body >
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nobis nisi quia porro! Officiis explicabo possimus praesentium nemo, nulla consequuntur dignissimos consequatur atque minus ipsa quod voluptatem? Neque, enim nemo.
-            </Body>
+                </Body>
                 <Actions>
                     <Button icon={calendar_icon}>Comprar Ticket</Button>
                     <Button icon={share_icon} variant="secondary" >Compartir</Button>
                 </Actions>
-
             </div>
         </div>
     </Fragment>
