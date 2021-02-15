@@ -22,7 +22,7 @@ html,body,#root{
         padding: 40px 30px;
         background: linear-gradient(to bottom,#feb97e, #fc8d6e);
     }
-    #root{
+    #root {
         margin: 0 auto;
         border-radius: 30px;
         width: 100%;
