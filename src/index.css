@@ -8,16 +8,16 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-#root{
+#root {
     background-color: white;
 }
-@media screen and (min-width: 600px){
-    body{
+@media screen and (min-width: 600px) {
+    body {
         padding: 40px 30px;
         min-height: 100vh;
-        background: linear-gradient(to bottom,#feb97e, #fc8d6e);
+        background: linear-gradient(to bottom, #feb97e, #fc8d6e);
     }
-    #root{
+    #root {
         margin: 0 auto;
         border-radius: 30px;
         width: 100%;

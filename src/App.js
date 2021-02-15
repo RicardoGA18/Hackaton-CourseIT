@@ -7,6 +7,7 @@ import Animal from "./containers/Animales";
 import Login from "./containers/Login";
 import Register from "./containers/Register";
 import Evento from "./containers/Evento";
+import Charities from "./containers/Charities";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/register" component={Register} />
                     <Route exact path="/evento/:id" component={Evento} />
+                    <Route exact path="/charities" component={Charities} />
                 </Switch>
             </BrowserRouter>
         </>
