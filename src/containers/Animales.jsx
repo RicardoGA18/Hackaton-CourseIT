@@ -20,21 +20,19 @@ const Animales = () => {
                     alt="Dog"
                 />
                 <Header name="Bob" location="Perú" onClose={() => {}} />
-                <div className="animal__container__body">
-                    <Body>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Modi nobis nisi quia porro! Officiis explicabo
-                        possimus praesentium nemo, nulla consequuntur
-                        dignissimos consequatur atque minus ipsa quod
-                        voluptatem? Neque, enim nemo.
-                    </Body>
-                    <Actions>
-                        <Button icon={coins_icon}>Adoptar a Bob</Button>
-                        <Button icon={share_icon} variant="secondary">
-                            Compartir
-                        </Button>
-                    </Actions>
-                </div>
+
+                <Body>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi nobis nisi quia porro! Officiis explicabo possimus
+                    praesentium nemo, nulla consequuntur dignissimos consequatur
+                    atque minus ipsa quod voluptatem? Neque, enim nemo.
+                </Body>
+                <Actions>
+                    <Button icon={coins_icon}>Adoptar a Bob</Button>
+                    <Button icon={share_icon} variant="secondary">
+                        Compartir
+                    </Button>
+                </Actions>
             </div>
         </Fragment>
     );

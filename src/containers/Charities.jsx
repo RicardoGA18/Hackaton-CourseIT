@@ -3,8 +3,10 @@ import React, { Fragment } from "react";
 import Header from "../components/Charities/Header";
 import arrow_left_icon from "../assets/arrow_left_icon.svg";
 import CharitieCard from "../components/Charities/CharitieCard";
+import { useHistory } from "react-router-dom";
 
 const Charities = () => {
+    const history = useHistory();
     return (
         <Fragment>
             <div className="charities__container">
@@ -13,7 +15,7 @@ const Charities = () => {
                     <div key={idx} style={{ marginBottom: 20 }}>
                         <CharitieCard
                             onClick={() => {
-                                console.log("CharitieCard-clicked", idx);
+                                history.push(`/charities/${idx}`);
                             }}
                             img="https://www.californiaemploymentlawreport.com/wp-content/uploads/sites/747/2018/12/volunteers.jpg"
                             title="Abrigo Animal de Perú"
