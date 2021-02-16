@@ -1,6 +1,6 @@
 import "../css/Animales.css";
 import React, { Fragment } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import Cover from "../components/Animales/Cover";
 import Header from "../components/Animales/Header";
 import Body from "../components/Animales/Body";
@@ -13,14 +13,16 @@ import bobAnimal from '../assets/photos/bobAnimal.png'
 
 const Animales = () => {
     // let { id } = useParams();
+    const history = useHistory()
     return (
         <Fragment>
             <div className="animal__container">
                 <Cover
                     src={bobAnimal}
                     alt="Dog"
+                    onClose={() => {history.push('/')}}
                 />
-                <Header name="Bob" location="Perú" onClose={() => {}} />
+                <Header name="Bob" location="Perú" />
 
                 <Body>
                     ¡Bob es lindo, súper cariñoso y le encanta jugar! Pero no todo es divertido,

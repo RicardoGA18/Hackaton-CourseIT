@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, textarea, select {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.FormAdd {
+  width: 100%;
+  padding: 30px 25px 40px;
+  font-family: 'Nunito', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 34px;
+}
+
+.FormAdd__Input:focus:valid, .FormAdd__Textarea:focus:valid {
+  -webkit-box-shadow: 0px 0px 5px rgba(36, 153, 199, 0.8);
+          box-shadow: 0px 0px 5px rgba(36, 153, 199, 0.8);
+}
+
+.FormAdd__Input:focus:invalid, .FormAdd__Textarea:focus:invalid {
+  -webkit-box-shadow: 0px 0px 5px rgba(199, 36, 36, 0.8);
+          box-shadow: 0px 0px 5px rgba(199, 36, 36, 0.8);
+}
+
+.FormAdd__Head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.FormAdd__Head svg {
+  width: 14px;
+  height: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.FormAdd__Head svg path {
+  fill: #ffc225;
+}
+
+.FormAdd__Name {
+  font-weight: 800;
+  font-size: 35px;
+  color: #ffc225;
+}
+
+.FormAdd__Container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+.FormAdd__Input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #8e8e8e;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+}
+
+.FormAdd__Textarea {
+  width: 100%;
+  height: 150px;
+  padding: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #8e8e8e;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+}
+
+.FormAdd__Submit {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  background-color: #FFC225;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=Form.css.map */

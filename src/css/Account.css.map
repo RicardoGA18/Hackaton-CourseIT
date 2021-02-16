@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,QAAQ,CAAA;EACN,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,cAAc;CACxB",
+    "sources": [
+        "Account.scss"
+    ],
+    "names": [],
+    "file": "Account.css"
+}
