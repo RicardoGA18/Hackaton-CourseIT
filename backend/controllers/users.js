@@ -9,13 +9,12 @@ const getUsers = (req,res) => {
 const newUser = async (req,res) => {
     const {email,password,name} = req.body;
     const user = new User(req.body);
-    console.log("Guardando un usuario");
+    console.log(req.body);
     await user.save();
     return res.status(201).json({
         ok:true,
         msg: 'registro',
     });
-
 }
 
 const loginUser = (req,res) => {

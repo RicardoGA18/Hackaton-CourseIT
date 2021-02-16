@@ -8,6 +8,8 @@ const { check } = require("express-validator");
 const users = require("./controllers/users");
 const {validate} = require('./middlewares/validate');
 
+app.use(express.json())
+
 dbConnection();
 
 // CRUD EVENTOS
@@ -27,6 +29,6 @@ app.post(
   (req, res) => users.newUser(req, res)
 );
 
-app.listen(process.env.PORT, () => {
+app.listen(4000, () => {
   console.log(`running on port: ${process.env.PORT}`);
 });

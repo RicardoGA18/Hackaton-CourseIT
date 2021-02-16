@@ -17,7 +17,7 @@ const Footer = () =>{
         <img src={blog} />
         <p>Blog Animal</p>
       </div>
-      <div className="FooterHome__Item">
+      <div className="FooterHome__Item" onClick={()=>{history.push('/perfil')}}>
         <img src={perfil} />
         <p>Perfil</p>
       </div>
