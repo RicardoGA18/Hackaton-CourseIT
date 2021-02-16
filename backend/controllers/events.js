@@ -1,8 +1,7 @@
-const User = require('../models/user-model');
-const bcrypt = require('bcryptjs');
+const User = require('../models/event-model');
 
 
-const newUser = async (req,res) => {
+const newEvent = async (req,res) => {
     const {email, password} = req.body;
     try {
         let user = await User.findOne({email});
@@ -63,5 +62,5 @@ const loginUser = async (req,res) => {
 
 module.exports = {
     loginUser,
-    newUser
+    newEvent
 }
