@@ -9,4 +9,25 @@
   width: 100%;
   padding: 30px 25px 40px;
 }
+
+.Account__Head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Account__Head img {
+  width: 14px;
+  height: 24px;
+  margin-right: 18px;
+}
+
+.Account__Head p {
+  font-size: 35px;
+  font-weight: 800;
+  color: #f7bf29;
+}
 /*# sourceMappingURL=Account.css.map */

@@ -6,4 +6,18 @@
 .Account{
   width: 100%;
   padding: 30px 25px 40px;
+  &__Head{
+    display: flex;
+    align-items: center;
+    img{
+      width: 14px;
+      height: 24px;
+      margin-right: 18px;
+    }
+    p{
+      font-size: 35px;
+      font-weight: 800;
+      color: rgb(247,191,41)
+    }
+  }
 }
