@@ -6,7 +6,8 @@ import Animales from '../components/Home/Animales'
 import Eventos from '../components/Home/Eventos'
 
 const Home = () => {
-    let [view, setView] = useState('todos')
+    let [view, setView] = useState('todos');
+    
 
     let todosON = () => <li className="is-active">TODOS</li>
     let todosOFF = () => <li onClick={() => setView(view = 'todos')}>TODOS</li>
