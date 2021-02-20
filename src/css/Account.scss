@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Mascota{
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.Account{
+  width: 100%;
+  padding: 30px 25px 40px;
+  &__Animals{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 70px;
+    border: 0.5px solid #E9E9E9;
+    border-radius: 15px;
+    &__Name{
+      width: 100%;
+      height: 100%;
+      padding: 5px 24px;
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 0.5px solid #E9E9E9;
+      p{
+        font-weight: 800;
+        font-size: 20px;
+        color: rgb(247,191,41)
+      }
+    }
+    &__Container{
+      width: auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(0,1fr));
+      grid-template-rows: 1fr;
+      grid-column-gap: 8px;
+      justify-content: start;
+      align-items: center;
+      padding: 0 24px;
+      overflow-x: auto;
+    }
+  }
+  &__Head{
+    display: flex;
+    align-items: center;
+    img{
+      width: 14px;
+      height: 24px;
+      margin-right: 18px;
+    }
+    p{
+      font-size: 35px;
+      font-weight: 800;
+      color: rgb(247,191,41)
+    }
+  }
+  &__Body{
+    margin-top: 78px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  &__Info{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    border-radius: 15px;
+    border: 0.5px solid #E9E9E9;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+  }
+  .name{
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.5px solid #E9E9E9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+    p{
+      font-weight: 800;
+      font-size: 24px;
+    }
+  }
+  &__Img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -51px;
+    display: flex;
+    justify-content: center;
+  }
+  .email{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      margin-left: 7px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}

@@ -8,6 +8,8 @@ const users = require("./controllers/users");
 const event = require('./controllers/events');
 const { validate } = require("../backend/middlewares/validate");
 
+app.use(express.json())
+
 dbConnection();
 
 // CRUD EVENTOS

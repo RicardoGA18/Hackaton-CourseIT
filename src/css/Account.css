@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Mascota {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.Mascota img {
+  width: 100%;
+  height: 100%;
+}
+
+.Account {
+  width: 100%;
+  padding: 30px 25px 40px;
+}
+
+.Account__Animals {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 45px 70px;
+      grid-template-rows: 45px 70px;
+  border: 0.5px solid #E9E9E9;
+  border-radius: 15px;
+}
+
+.Account__Animals__Name {
+  width: 100%;
+  height: 100%;
+  padding: 5px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 0.5px solid #E9E9E9;
+}
+
+.Account__Animals__Name p {
+  font-weight: 800;
+  font-size: 20px;
+  color: #f7bf29;
+}
+
+.Account__Animals__Container {
+  width: auto;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 8px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 24px;
+  overflow-x: auto;
+}
+
+.Account__Head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Account__Head img {
+  width: 14px;
+  height: 24px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.Account__Head p {
+  font-size: 35px;
+  font-weight: 800;
+  color: #f7bf29;
+}
+
+.Account__Body {
+  margin-top: 78px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.Account__Info {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 15px;
+  border: 0.5px solid #E9E9E9;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 100px auto;
+      grid-template-rows: 100px auto;
+}
+
+.Account .name {
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.5px solid #E9E9E9;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 5px;
+}
+
+.Account .name p {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.Account__Img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Account .email {
+  width: 100%;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Account .email p {
+  margin-left: 7px;
+  font-weight: 400;
+  font-size: 16px;
+}
+/*# sourceMappingURL=Account.css.map */

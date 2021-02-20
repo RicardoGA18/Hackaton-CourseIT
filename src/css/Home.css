@@ -81,11 +81,12 @@
   position: absolute;
   top: 8px;
   left: 12px;
-  font-weight: 800px;
+  font-weight: 800;
   color: rgba(255, 255, 255, 0.9);
   font-size: 24px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.502458);
 }
+
 
 .EventCard {
   cursor: pointer;
@@ -97,8 +98,24 @@
   height: auto;
 }
 
+.EventCard__plus{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .EventCard img {
   width: 100%;
+}
+
+.EventCard__plus img{
+  width: 44px;
+  height: 44px;
 }
 
 .EventCard__Info {
@@ -112,6 +129,10 @@
   font-size: 24px;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.49918);
+}
+.EventCard__Title.is-plus{
+  color: rgba(0,0,0,0.95);
+  font-family: 'Nunito';
 }
 
 .EventCard__Organize {
@@ -181,7 +202,7 @@
 }
 
 .CardDonacion p, .CardAyuda p {
-  font-weight: 400;
+  font-weight: 800;
   font-size: 21px;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -210,6 +231,7 @@
 }
 
 .FooterHome__Item {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +251,7 @@
   font-size: 10px;
   color: #f7bf29;
   margin-top: 5px;
+  font-weight: 800;
 }
 
 .FooterHome__Item:nth-child(2) {
